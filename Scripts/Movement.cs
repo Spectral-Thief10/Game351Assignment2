@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {   
-    int zSpeed = 100;
-    int rSpeed = 100;
+    public int zSpeed;
+    public int rSpeed;
 
     public float sampleDistance = 3f;
     public float tiltSpeed = 5f;
