@@ -9,10 +9,10 @@ public class Movement : MonoBehaviour
 
     public float sampleDistance = 3f;
     public float tiltSpeed = 5f;
-
     private float currentYRotation = 0f;
     private Rigidbody rb;
-
+    
+    
     void Start()
     {
         
@@ -23,10 +23,7 @@ public class Movement : MonoBehaviour
         Terrain terrain = Terrain.activeTerrain;
 
         // Original movement code
-        if (Input.GetKey(KeyCode.Space))
-        {
-            transform.Translate(0, 0, 0.1f, Space.Self);
-        }
+        
 
         if(Input.GetKey(KeyCode.A))
         {
@@ -47,7 +44,7 @@ public class Movement : MonoBehaviour
         {
             transform.Translate(0, 0, -zSpeed * Time.deltaTime, Space.Self);
         }
-
+        
         // Sample terrain heights
         Vector3 centerPos = transform.position;
         
